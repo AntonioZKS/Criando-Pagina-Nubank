@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #8A05BE;
+    --secondary-color: #FFFFFF;
+    --text-color: #000000;
+    --background-color: #F5F5F5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo-img {
+    height: 25px;
+}
+
+header nav {
+    gap: 20px;
+    display: flex;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+.btn-nubank {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero {
+    position: relative;
+    border-radius: 0 0 40px 40px;
+    overflow: hidden;
+    align-items: end;
+    display: flex;
+    padding: 40px 80px;
+    min-height: 80vh;
+    background: url('img/Gemini_Generated_Image_uktrm9uktrm9uktr.png') center 0/cover no-repeat;
+}
+
+.hero::before {
+    border-radius: inherit;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+
+}
+
+.hero-content {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.hero-texte {
+    max-width: 480px;
+}
+
+.hero-text h1 {
+    color: var(--secondary-color);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 32px;
+}
+
+.hero-card {
+    max-width: 400px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.hero-card label {
+    display: block;
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.hero-card input {
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ececec;
+}
+
+.btn-confirm {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    margin-bottom: 16px;
+    margin-top: 5px;
+
+
+} .services {
+    padding: 60px 40px;
+    background-color: var(--background-color);
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+ .services a{
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--text-color);
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 20px;
+    
+}
+.services a:hover {
+    color: var(--primary-color);
+}
+.card-section {
+    padding: 100px 40px;
+    background-color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    
+}
+.credit-card {
+    width: 360px;
+    height: 220px;
+    background: linear-gradient(135deg, #8A05BE, #5C00A3);
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(130, 10, 209, 0.3);
+}
+.card-chip {
+    background: linear-gradient(135deg, #ffd700, #ffa500);
+    width: 60px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-number {
+    color: var(--secondary-color);
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.card-info span {  
+    color: var(--secondary-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.card-info strong {
+
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+
