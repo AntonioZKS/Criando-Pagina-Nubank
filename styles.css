@@ -222,5 +222,19 @@ header nav a:hover {
     font-size: 24px;
     color: var(--secondary-color);
 }
-
+.card-text {
+   max-width: 480px;
+}
+.card-text h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+card-text p {
+    line-height: 1.7;
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 24px;
+}
 
